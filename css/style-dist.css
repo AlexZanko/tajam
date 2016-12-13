@@ -2992,11 +2992,11 @@ button {
         position: fixed
     }
     .carousel {
-        width: 95%;
+        width: 310px;
         margin: 0 auto
     }
     .carousel-wrapper {
-        width: 92%;
+        width: 80%;
         margin: 0 auto
     }
     .carousel-item__img img {
