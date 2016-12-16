@@ -8,7 +8,7 @@
 	<link rel="stylesheet/less" type="text/css" href="css/style.less">
 	<script src="scripts/less.js" type="text/javascript"></script>-->
 	<link rel="stylesheet" href="css/style-dist.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<script src="scripts/scrolla.jquery.js" type="text/javascript" ></script>
 	<script src="scripts/mobile-menu.js" type="text/javascript" ></script>
@@ -16,8 +16,12 @@
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i,900" rel="stylesheet">
 	<script src="scripts/carousel.js"></script>
 	<script src="scripts/softscroll.js"></script>
+
 	<!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
+	<![endif]-->
+	<!--[if lt IE 10]>
+	<script src="scripts/jquery.columnizer.js"></script>
 	<![endif]-->
 	</head>
 
@@ -316,9 +320,13 @@
 				</div>
 			</div>
 		</footer>	
-			<script>
-		
-	$('.animate').scrolla();
+	<script>
+		$('.animate').scrolla();
 	</script>
+	<!--[if lt IE10]>
+	<script>
+    $(".clients").columnize({columns:2});
+    </script>
+    <![endif]-->
 </body>
 </html>
